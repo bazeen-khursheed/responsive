@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: "Roboto", serif;
+}
+
+.navbar {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   padding: 10px 90px;
+   gap: 10px;
+   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+   flex-direction: column;
+   gap: 20px;
+   width: 100%;
+}
+
+.nav2 ul {
+   display: flex;
+   list-style: none;
+   gap: 55px;
+   font-size: 20px;
+}
+
+img {
+   width: 60px;
+}
+
+.nav2 ul li {
+   font-size: 16px;
+}
+
+.nav1 {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+}
+
+.nav1 .left ul {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+   list-style: none;
+}
+
+.nav1 .right {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 20px;
+}
+
+.right button {
+   background-color: #ffbc0d;
+   border: 0;
+   outline: none;
+   padding: 10px 30px;
+   border-radius: 5px;
+   font-size: 16px;
+}
+
+.search-bar {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 15px;
+}
+
+.locate-me {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 15px;
+}
+
+.search-bar a {
+   color: black;
+   text-decoration: none;
+}
+
+.locate-me a {
+   color: black;
+   text-decoration: none;
+}
+
+.locate-me i {
+   color: red;
+}
+
+.navbar-image-logo i{
+   display: none;
+}
+
+.navbar-image-logo {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+@media (max-width:500px) {
+   .navbar-image-logo i{
+      display: block;
+      font-size: 20px;
+   }
+   .nav2 {
+      display: none;
+   }
+
+   .navbar {
+      padding: 10px 20px;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+   }
+
+   .navbar-content {
+      width: 50%;
+   }
+
+   .navbar img {
+      width: 24px;
+   }
+
+   .left {
+      display: none;
+
+   }
+
+   .locate-me {
+      display: none;
+   }
+
+   .search-bar {
+      display: none;
+   }
+
+   .right button {
+      font-size: 14px;
+      padding: 6px 15px;
+   }
+}
